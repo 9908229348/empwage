@@ -5,13 +5,13 @@ empRateperHr=20
 empCheck=$((RANDOM%3))
 case $empCheck in
      $isPartTime)
-               empWorkingHr=4
+                empWorkingHr=4
      ;;
      $isFullTime)
                 empWorkingHr=8
      ;;
       *)
-             empWorkingHr=0
+                empWorkingHr=0
 esac
 salary=$(($empRateperHr*$empWorkingHr))
 
